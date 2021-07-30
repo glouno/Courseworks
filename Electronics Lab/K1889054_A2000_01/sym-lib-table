@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name LM386_Amplifier_1)(type Legacy)(uri ${KIPRJMOD}/Lib_sch/LM386_Amplifier_1.lib)(options "")(descr ""))
+)
