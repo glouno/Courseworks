@@ -1,0 +1,41 @@
+NAME Modulo16FreeVariable
+VAR
+  w    : boolean;
+  x    : boolean;
+  y    : boolean;
+  z    : boolean;
+  V    : boolean;
+INIT
+  !w & !x & !y & !z;
+
+RULES
+  !z & V :
+	z := true
+
+  !z & !V :
+	z := false
+
+  z & !y & V:
+	z := false; y := true
+
+  z & !y & !V:
+	z := true; y := false
+
+  z & y & !x & V:
+	z := false; y := false; x := true
+
+  z & y & !x & !V:
+	z := true; y := true; x := false
+
+  z & y & x & !w & V:
+	z := false; y := false; x := false; w := true
+
+  z & y & x & !w & !V:
+	z := true; y := true; x := true; w:= false
+
+  z & y & x & w & V:
+	z := false; y := false; x := false; w := false
+
+  z & y & x & w & !V:
+	z := true; y := true; x := true; w:= true
+

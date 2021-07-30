@@ -1,0 +1,34 @@
+NAME Modulo8FreeVariable
+VAR
+  x    : boolean;
+  y    : boolean;
+  z    : boolean;
+  V    : boolean;
+INIT
+  !x & !y & !z;
+
+RULES
+  !z & V :
+	z := true
+
+  !z & !V :
+	z := false
+
+  z & !y & V:
+	z := false; y := true
+
+  z & !y & !V:
+	z := true; y := false
+
+  z & y & !x & V:
+	z := false; y := false; x := true
+
+  z & y & !x & !V:
+	z := true; y := true; x := false
+
+  z & y & x & V:
+	z := false; y := false; x := false
+
+  z & y & x & !V:
+	z := true; y := true; x := true
+

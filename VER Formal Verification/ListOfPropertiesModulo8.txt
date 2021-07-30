@@ -1,0 +1,18 @@
+AG ((!x & !y & !z & V) -> AX(!x & !y & z))
+AG ((!x & !y & z & V) -> AX(!x & y & !z))
+AG ((!x & y & !z & V) -> AX(!x & y & z))
+AG ((!x & y & z & V) -> AX(x & !y & !z))
+AG ((x & !y & !z & V) -> AX(x & !y & z))
+AG ((x & !y & z & V) -> AX(x & y & !z))
+AG ((x & y & !z & V) -> AX(x & y & z))
+AG ((x & y & z & V) -> AX(!x & !y & !z))
+
+AG ((!x & !y & !z & !V) -> AX(!x & !y & !z))
+AG ((!x & !y & z & !V) -> AX(!x & !y & z))
+AG ((!x & y & !z & !V) -> AX(!x & y & !z))
+AG ((!x & y & z & !V) -> AX(!x & y & z))
+AG ((x & !y & !z & !V) -> AX(x & !y & !z))
+AG ((x & !y & z & !V) -> AX(x & !y & z))
+AG ((x & y & !z & !V) -> AX(x & y & !z))
+AG ((x & y & z & !V) -> AX(x & y & z))
+!x & !y & !z
