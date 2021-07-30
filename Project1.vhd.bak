@@ -1,0 +1,13 @@
+----------------------------------------------------
+-- Name: Paul Beglin
+-- k number: k1889054
+-- Project: Project1 submission (Full adder and encoder)
+
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+ 
+ENTITY Project1 IS
+END Project1;
+ 
+architecture arch of Project1 is
